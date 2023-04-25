@@ -1,6 +1,8 @@
 import { Header, ShowData } from './components';
+import {getData} from './api/services'
 
 export default function App() {
+    getData()
 
     return (
         <div className='relative'>
