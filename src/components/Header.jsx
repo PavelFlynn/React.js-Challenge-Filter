@@ -1,5 +1,5 @@
 
-export default function Header(props) {
+export function Header(props) {
 
     return (
         <div className='relative my-2 mb-5'>
