@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+import { Item } from '../models';
 
 export function ShowData({ state }) {
 
@@ -17,4 +19,8 @@ export function ShowData({ state }) {
             </div>
         </div>
     )
+}
+
+ShowData.propTypes = {
+    state: PropTypes.arrayOf(PropTypes.instanceOf(Item)),
 }

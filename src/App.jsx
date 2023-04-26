@@ -12,7 +12,9 @@ export default function App() {
 
                     <Header label='02 : Challenge' />
                     <CallData setState={setState} />
+                    {state.length > 0 ? (
                     <ShowData state={state} />
+                    ) : null}
 
                 </div>
             </div>

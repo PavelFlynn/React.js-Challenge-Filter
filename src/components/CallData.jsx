@@ -1,6 +1,7 @@
 import { Button } from '@mui/material';
 import { getData } from '../api/services';
 import { Item } from '../models';
+import PropTypes from 'prop-types';
 
 export function CallData({ setState }) {
 
@@ -24,4 +25,8 @@ export function CallData({ setState }) {
             </Button>
         </div>
     )
+}
+
+CallData.propTypes = {
+    setState: PropTypes.func,
 }
